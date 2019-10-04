@@ -1,20 +1,24 @@
-from django.shortcuts import render
-from django.shortcuts import redirect
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404
 from .models import *
 from .serializers import *
-from rest_framework import status
-from rest_framework import viewsets
-from rest_framework import filters
+from rest_framework import status, filters, viewsets
+from rest_framework.response import Response
+from rest_framework.pagination import PageNumberPagination
+from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium import webdriver
 from selenium.common.exceptions import TimeoutException,NoSuchElementException,ElementNotInteractableException
 from selenium.webdriver.common.keys import Keys
-import json
+
+class StandardResultsSetPagination(PageNumberPagination):
+    page_size = 100
+    page_size_query_param = 'page_size'
+    max_page_size = 1000
+    def get_paginated_response(self, data):
+        return self.page.number, self.page.paginator.num_pages, self.page.paginator.count
 
 class paperList(viewsets.ModelViewSet):
     """
@@ -22,8 +26,42 @@ class paperList(viewsets.ModelViewSet):
     """
     queryset = paper.objects.all()
     serializer_class = paperSerializer
-    filter_backends = [filters.SearchFilter]
-    search_fields = ['author']
+    pagination_class = StandardResultsSetPagination
+    # filter_backends = [filters.SearchFilter, filters.OrderingFilter]
+    # search_fields = ['author']
+    # ordering_fields = ('author','judul')
+    def list(self, request,*args, **kwargs):
+        fields = paper._meta.get_fields()
+        page = self.request.query_params.get('page', '')
+        rows = self.request.query_params.get('rows', '')
+        sidx = self.request.query_params.get('sidx', '0')
+        sord = self.request.query_params.get('sord', '')
+        if sord == 'asc':
+            queryset = self.filter_queryset(self.get_queryset()).order_by(fields[int(sidx)].name)
+        elif sord == 'desc':
+            queryset = self.filter_queryset(self.get_queryset()).order_by('-'+fields[int(sidx)].name)
+        else:
+            queryset = self.filter_queryset(self.get_queryset())
+        pageset = self.paginate_queryset(queryset)
+        if pageset is not None and page != '':
+            if rows !='':
+                pageset = pageset[:int(rows)]
+            records = self.serializer_class(pageset, many=True)
+            page,total,count = self.get_paginated_response(paper)
+            return Response({
+                'success':True,
+                'total':total,
+                'page':page,
+                'records':count,
+                'rows':records.data
+            })
+        else:
+            records = self.serializer_class(queryset,many=True)
+            return Response({
+                'success':True,
+                'records':queryset.count(),
+                'rows':records.data
+            })
 
 def progressPercentage(current,total):
     fraction = current/total
@@ -481,7 +519,7 @@ def addSinta(request):
     options.headless = True #False, untuk menamplikan GUI firefox
     waiting_time = 10 #detik,mengatur timeout pada tiap menunggu element yang dicari
     AddDataSinta(listDosen, options,waiting_time)
-    return redirect('../paper/')
+    return HttpResponse(status=204)
 
 def addIeee(request):
     listDosen=["Heru Supriyono","Husni Thamrin","Fajar Suryawan","Bana Handaga"]
@@ -489,7 +527,7 @@ def addIeee(request):
     options.headless = True #False, untuk menamplikan GUI firefox
     waiting_time = 10 #detik,mengatur timeout pada tiap menunggu element yang dicari
     AddDataIeee(listDosen, options,waiting_time)
-    return redirect('../paper/')
+    return HttpResponse(status=204)
 
 def addDoaj(request):
     listDosen=["Heru Supriyono","Husni Thamrin","Fajar Suryawan","Bana Handaga"]
@@ -497,7 +535,7 @@ def addDoaj(request):
     options.headless = True #False, untuk menamplikan GUI firefox
     waiting_time = 10 #detik,mengatur timeout pada tiap menunggu element yang dicari
     AddDataDoaj(listDosen, options,waiting_time)
-    return redirect('../paper/')
+    return HttpResponse(status=204)
 
 def addRg(request):
     listDosen=["Heru Supriyono","Husni Thamrin","Fajar Suryawan","Bana Handaga"]
@@ -505,7 +543,7 @@ def addRg(request):
     options.headless = True #False, untuk menamplikan GUI firefox
     waiting_time = 10 #detik,mengatur timeout pada tiap menunggu element yang dicari
     AddRG(listDosen, options,waiting_time)
-    return redirect('../paper/')
+    return HttpResponse(status=204)
 
 def fixing(listDosen, options, waiting_time):
     is_fixed = False
@@ -555,15 +593,19 @@ def is_need_fixing(request):
         is_fixed = fixing(listDosen, options, waiting_time)
         if is_fixed:
             break
-    return redirect('../paper/')
+    return HttpResponse(status=204)
 
 def Main(request):
     listDosen=["Heru Supriyono","Husni Thamrin","Fajar Suryawan","Bana Handaga"]
     options = Options()
     options.headless = True #False, untuk menampilkan GUI firefox
     waiting_time = 2 #detik,mengatur timeout pada tiap menunggu element yang dicari
+    open("Ieee.log",'w')
+    open("Doaj.log",'w')
+    open("Rg.log.",'w')
+    open("Sinta2.log",'w')
     AddDataIeee(listDosen, options, waiting_time)
     AddDataDoaj(listDosen, options, waiting_time)
     AddRG(listDosen, options,waiting_time)
     AddDataSinta(listDosen, options)
-    return redirect('../paper/')
+    return HttpResponse(status=204)

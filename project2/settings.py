@@ -71,9 +71,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project2.wsgi.application'
 
-REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend',]
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend',]
+# }
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
