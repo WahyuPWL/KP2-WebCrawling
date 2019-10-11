@@ -7,3 +7,5 @@ Then you must add path manually, I.e. 'C:\<Where your geckodriver.exe is>\geckod
 To run the code as webservice you'll need:
 1. 127.0.0.1:8000/main  --> For making first run
 2. 127.0.0.1:8000/fix    --> For fixing the error, i.e, browser accidentaly exit
+
+You can run autoRun.py after running server, it will delete all log and starting crawling and create log from beginning
