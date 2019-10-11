@@ -602,7 +602,7 @@ def Main(request):
     waiting_time = 2 #detik,mengatur timeout pada tiap menunggu element yang dicari
     open("Ieee.log",'w')
     open("Doaj.log",'w')
-    open("Rg.log.",'w')
+    open("Rg.log",'w')
     open("Sinta2.log",'w')
     AddDataIeee(listDosen, options, waiting_time)
     AddDataDoaj(listDosen, options, waiting_time)
