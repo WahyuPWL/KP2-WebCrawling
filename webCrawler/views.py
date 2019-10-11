@@ -283,26 +283,28 @@ def AddDataDoaj(listDosen, options, timeout):
             print("Start crawling : "+ listDosen[dosen] +" in Doaj")
             while True:
                 try:
-                    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR , 'div.span10')))
+                    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR , 'div.col-md-10 span.title')))
                     break
                 except TimeoutException:
                     break
-            page = driver.find_elements_by_css_selector('div.span4 p')
-            count_items = int((page[0].text).split()[4])
+            page = driver.find_elements_by_css_selector('div.row div.col-md-6 span')
             if len(page) == 0:
                 print('No target found\n')
                 continue
+            count_items = int(page[2].text)
             print('Crawling...')
             for count in range(count_items):
                 try:
-                    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR , 'div.span10')))
+                    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR , 'div.col-md-10 span.title')))
                 except TimeoutException:
                     break
-                elements = driver.find_elements_by_css_selector('div.span10')
+                elements = driver.find_elements_by_css_selector('div.col-md-10')
                 for i in range(len(elements)):
-                    progressPercentage((i+1)+(count*10), count_items)
+                    if i==0:
+                        continue
+                    progressPercentage((i)+(count*10), count_items)
                     try:
-                        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR , 'div.span10')))
+                        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR , 'div.col-md-10 span.title')))
                     except TimeoutException:
                         continue
                     check_is_ok = False
@@ -310,34 +312,33 @@ def AddDataDoaj(listDosen, options, timeout):
                     check_aspect2 = listDosen[dosen]
                     check_aspect3 = "UMS"
                     temp_url = driver.current_url
-                    items = driver.find_elements_by_css_selector('div.span10')
+                    items = driver.find_elements_by_css_selector('div.col-md-10')
                     url = items[i].find_element_by_css_selector('a').get_attribute("href")
                     driver.get(url)
                     #memeriksa institusi penerbit
                     try:
-                        check = driver.find_elements_by_css_selector('div.row-fluid div.span5 div.box p')[4].text
+                        check = driver.find_elements_by_css_selector('div.row div.col-md-5 div.box p')[4].text
                         if check_aspect1 in check:
                             check_is_ok = True
                         elif check_aspect3 in check:
                             check_is_ok = True
                     except NoSuchElementException:
                         try:
-                            checks = driver.find_elements_by_css_selector('div.row-fluid div.span5 p')
+                            checks = driver.find_elements_by_css_selector('div.row div.col-md-5 p')
                             for i in range(len(checks)):
-                                check = checks[i].find_element_by_css_selector('em')
-                                if check_aspect2 in check.text and check_aspect1 in check.text:
+                                if check_aspect2 in checks[i].text and check_aspect1 in checks[i].text:
                                     check_is_ok = True
-                                elif check_aspect2 in check.text and check_aspect3 in check.text:
+                                elif check_aspect2 in checks[i].text and check_aspect3 in checks[i].text:
                                     check_is_ok = True
                         except NoSuchElementException:
                             None
                     driver.get(temp_url)
                     if check_is_ok:
                         try:
-                            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR , 'div.span10')))
+                            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR , 'div.col-md-10 span.title')))
                         except TimeoutException:
                             continue
-                        items = driver.find_elements_by_css_selector('div.span10')
+                        items = driver.find_elements_by_css_selector('div.col-md-10')
                         desc1 = items[i].find_element_by_css_selector('span.title a')
                         desc2 = items[i].find_element_by_css_selector('em')
                         desc3 = items[i].find_elements_by_css_selector('a')[1]
@@ -350,10 +351,10 @@ def AddDataDoaj(listDosen, options, timeout):
                             items[i].text.split('\n')[2]#Detail
                         ])
                 try:
-                    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR , 'div.span10')))
+                    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR , 'div.col-md-10 span.title')))
                 except TimeoutException:
                     break
-                nextPage = driver.find_elements_by_css_selector('span.icon-arrow-right')
+                nextPage = driver.find_elements_by_css_selector('div.row a.edges-bs3-pager-next')
                 if len(nextPage)==0:
                     break
                 else:
@@ -516,7 +517,7 @@ def AddRG(listDosen, options, timeout):
 def addSinta(request):
     listDosen=["Heru Supriyono","Husni Thamrin","Fajar Suryawan","Bana Handaga"]
     options = Options()
-    options.headless = True #False, untuk menamplikan GUI firefox
+    options.headless = False #False, untuk menamplikan GUI firefox
     waiting_time = 10 #detik,mengatur timeout pada tiap menunggu element yang dicari
     AddDataSinta(listDosen, options,waiting_time)
     return HttpResponse(status=204)
@@ -524,7 +525,7 @@ def addSinta(request):
 def addIeee(request):
     listDosen=["Heru Supriyono","Husni Thamrin","Fajar Suryawan","Bana Handaga"]
     options = Options()
-    options.headless = True #False, untuk menamplikan GUI firefox
+    options.headless = False #False, untuk menamplikan GUI firefox
     waiting_time = 10 #detik,mengatur timeout pada tiap menunggu element yang dicari
     AddDataIeee(listDosen, options,waiting_time)
     return HttpResponse(status=204)
@@ -532,7 +533,7 @@ def addIeee(request):
 def addDoaj(request):
     listDosen=["Heru Supriyono","Husni Thamrin","Fajar Suryawan","Bana Handaga"]
     options = Options()
-    options.headless = True #False, untuk menamplikan GUI firefox
+    options.headless = False #False, untuk menamplikan GUI firefox
     waiting_time = 10 #detik,mengatur timeout pada tiap menunggu element yang dicari
     AddDataDoaj(listDosen, options,waiting_time)
     return HttpResponse(status=204)
@@ -540,7 +541,7 @@ def addDoaj(request):
 def addRg(request):
     listDosen=["Heru Supriyono","Husni Thamrin","Fajar Suryawan","Bana Handaga"]
     options = Options()
-    options.headless = True #False, untuk menamplikan GUI firefox
+    options.headless = False #False, untuk menamplikan GUI firefox
     waiting_time = 10 #detik,mengatur timeout pada tiap menunggu element yang dicari
     AddRG(listDosen, options,waiting_time)
     return HttpResponse(status=204)
@@ -599,7 +600,7 @@ def Main(request):
     listDosen=["Heru Supriyono","Husni Thamrin","Fajar Suryawan","Bana Handaga"]
     options = Options()
     options.headless = True #False, untuk menampilkan GUI firefox
-    waiting_time = 2 #detik,mengatur timeout pada tiap menunggu element yang dicari
+    waiting_time = 5 #detik,mengatur timeout pada tiap menunggu element yang dicari
     open("Ieee.log",'w')
     open("Doaj.log",'w')
     open("Rg.log",'w')

@@ -141,3 +141,365 @@ JavaScript warning: https://ieeexplore.ieee.org/assets/dist/js/vendor.js?cv=2019
 [Parent 6076, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1568728986/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
 [Child 6892, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1568728986/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
 [Parent 6076, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1568728986/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1570798901102	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.pdb1cNfNbfXS"
+*** You are running in headless mode.
+
+(firefox:115758): Gtk-WARNING **: 13:01:41.146: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570798901800	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570798901800	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570798901801	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570798901801	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1570798904579	Marionette	INFO	Listening on port 46071
+1570798904616	Marionette	WARN	TLS certificate errors will be ignored for this session
+1570798969804	Marionette	INFO	Stopped listening on port 46071
+[Parent 115758, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox/src/firefox-69.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1570798971918	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.T6tae2FdY1Q9"
+*** You are running in headless mode.
+
+(firefox:116026): Gtk-WARNING **: 13:02:51.954: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570798972465	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570798972465	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570798972465	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570798972465	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1570798975558	Marionette	INFO	Listening on port 38373
+1570798975633	Marionette	WARN	TLS certificate errors will be ignored for this session
+1570799095141	Marionette	INFO	Stopped listening on port 38373
+[Parent 116026, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox/src/firefox-69.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1570799096509	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fGUh7bf7Q9sc"
+*** You are running in headless mode.
+
+(firefox:116350): Gtk-WARNING **: 13:04:56.546: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570799097028	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570799097028	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570799097028	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570799097028	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1570799099732	Marionette	INFO	Listening on port 45795
+1570799099823	Marionette	WARN	TLS certificate errors will be ignored for this session
+1570799127830	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+JavaScript error: https://c5.rgstatic.net/javascript/bundles/bootstrap.f146c6.js, line 1: Error: Can not load javascript/bundles/entrypoints/publicbrowse/Search.a811a9.js
+JavaScript error: https://c5.rgstatic.net/javascript/bundles/bootstrap.f146c6.js, line 1: Error: Can not load javascript/bundles/entrypoints/application/GlobalFooterLoggedOut.585251.js
+1570799161904	Marionette	INFO	Stopped listening on port 45795
+1570799177307	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.FDEVeiMrAUKc"
+*** You are running in headless mode.
+
+(firefox:116637): Gtk-WARNING **: 13:06:17.356: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570799177850	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570799177850	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570799177850	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570799177850	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1570799180916	Marionette	INFO	Listening on port 38899
+1570799181021	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1570799204568	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Kb5yDr8WBL2P"
+*** You are running in headless mode.
+
+(firefox:116867): Gtk-WARNING **: 13:06:44.602: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570799205065	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570799205066	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570799205066	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570799205066	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1570799208329	Marionette	INFO	Listening on port 45779
+1570799208387	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1570799284256	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sUpM2qvICt3T"
+
+(firefox:117158): Gtk-WARNING **: 13:08:04.294: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570799284950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570799284950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570799284951	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570799284951	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:117212): Gtk-WARNING **: 13:08:05.903: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:117234): Gtk-WARNING **: 13:08:06.276: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:117300): Gtk-WARNING **: 13:08:08.213: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570799288428	Marionette	INFO	Listening on port 35971
+1570799288504	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+1570799961068	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.YQATEyFqRY14"
+*** You are running in headless mode.
+
+(firefox:118403): Gtk-WARNING **: 13:19:21.102: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570799961629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570799961629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570799961630	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570799961630	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1570799964808	Marionette	INFO	Listening on port 43605
+1570799964881	Marionette	WARN	TLS certificate errors will be ignored for this session
+1570800050282	Marionette	INFO	Stopped listening on port 43605
+[Parent 118403, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox/src/firefox-69.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1570800363804	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uLLE22UIgEoT"
+*** You are running in headless mode.
+
+(firefox:119113): Gtk-WARNING **: 13:26:03.842: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570800364370	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570800364370	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570800364370	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570800364371	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1570800367873	Marionette	INFO	Listening on port 38455
+1570800367922	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+1570800458231	Marionette	INFO	Stopped listening on port 38455
+[Parent 119113, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox/src/firefox-69.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1570800682053	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.QrYOPwairHge"
+*** You are running in headless mode.
+
+(firefox:119743): Gtk-WARNING **: 13:31:22.095: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570800682844	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570800682844	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570800682845	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570800682845	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1570800686441	Marionette	INFO	Listening on port 36493
+1570800686474	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1570800837302	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Qwm3zuBIgyO1"
+*** You are running in headless mode.
+
+(firefox:120144): Gtk-WARNING **: 13:33:57.362: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570800838158	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570800838158	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570800838159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570800838159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1570800841780	Marionette	INFO	Listening on port 36803
+1570800841821	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+1570800954063	Marionette	INFO	Stopped listening on port 36803
+[Parent 120144, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox/src/firefox-69.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 120144, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox/src/firefox-69.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1570801179537	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PZOjEIX13JpK"
+
+(firefox:120789): Gtk-WARNING **: 13:39:39.576: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570801180160	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570801180160	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570801180161	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570801180161	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:120845): Gtk-WARNING **: 13:39:41.314: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:120872): Gtk-WARNING **: 13:39:41.640: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:120932): Gtk-WARNING **: 13:39:43.184: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570801184600	Marionette	INFO	Listening on port 42105
+1570801184653	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+1570801244430	Marionette	INFO	Stopped listening on port 42105
+[Parent 120789, Gecko_IOThread] WARNING: pipe error (68): Connection reset by peer: file /build/firefox/src/firefox-69.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1570801710849	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dQOeaXOJ45eP"
+
+(firefox:121637): Gtk-WARNING **: 13:48:30.909: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570801711949	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570801711950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570801711950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570801711950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:121692): Gtk-WARNING **: 13:48:33.188: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:121711): Gtk-WARNING **: 13:48:33.661: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:121783): Gtk-WARNING **: 13:48:36.544: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570801716996	Marionette	INFO	Listening on port 46531
+1570801717032	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+Exiting due to channel error.
+[Child 121711, Chrome_ChildThread] WARNING: pipe error (40): Connection reset by peer: file /build/firefox/src/firefox-69.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+Exiting due to channel error.
+1570801935120	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.o4QTAyVeMetI"
+
+(firefox:122120): Gtk-WARNING **: 13:52:15.168: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570801935736	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570801935736	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570801935737	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570801935737	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:122176): Gtk-WARNING **: 13:52:16.569: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:122198): Gtk-WARNING **: 13:52:16.960: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:122262): Gtk-WARNING **: 13:52:18.665: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570801938961	Marionette	INFO	Listening on port 37731
+1570801939067	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1570802052270	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3RBhXAwya1DJ"
+
+(firefox:122481): Gtk-WARNING **: 13:54:12.309: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570802052944	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570802052944	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570802052945	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570802052945	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:122538): Gtk-WARNING **: 13:54:13.892: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:122559): Gtk-WARNING **: 13:54:14.210: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:122629): Gtk-WARNING **: 13:54:16.164: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570802056410	Marionette	INFO	Listening on port 33805
+1570802056510	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1570802349110	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ZPpAnyvIxfUE"
+
+(firefox:123087): Gtk-WARNING **: 13:59:09.153: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570802350248	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570802350248	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570802350249	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570802350249	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:123149): Gtk-WARNING **: 13:59:11.746: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:123169): Gtk-WARNING **: 13:59:12.168: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:123236): Gtk-WARNING **: 13:59:14.153: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570802354479	Marionette	INFO	Listening on port 42101
+1570802354547	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+JavaScript error: https://doaj.org/static/vendor/edges/src/edges.js?v=3.0.6, line 389: TypeError: callback is not a function
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1570802527653	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.J9WWVbAfOS9Q"
+
+(firefox:123662): Gtk-WARNING **: 14:02:07.704: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570802528763	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570802528764	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570802528765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570802528765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:123730): Gtk-WARNING **: 14:02:17.777: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:123722): Gtk-WARNING **: 14:02:17.777: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:123814): Gtk-WARNING **: 14:02:19.428: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570802539881	Marionette	INFO	Listening on port 35027
+1570802539929	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1570802773273	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mvns24osEIyK"
+
+(firefox:124304): Gtk-WARNING **: 14:06:13.314: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570802774335	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570802774335	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570802774336	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570802774336	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:124364): Gtk-WARNING **: 14:06:15.289: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:124385): Gtk-WARNING **: 14:06:15.605: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570802778025	Marionette	INFO	Listening on port 42139
+1570802778096	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:124456): Gtk-WARNING **: 14:06:18.403: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[Child 124364, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox/src/firefox-69.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+1570803056686	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1np1qyySb2VG"
+
+(firefox:124960): Gtk-WARNING **: 14:10:56.733: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570803057373	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570803057374	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570803057374	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570803057374	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:125018): Gtk-WARNING **: 14:10:58.159: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:125041): Gtk-WARNING **: 14:10:58.515: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:125120): Gtk-WARNING **: 14:11:00.686: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570803062400	Marionette	INFO	Listening on port 43865
+1570803062505	Marionette	WARN	TLS certificate errors will be ignored for this session
+1570803087369	Marionette	INFO	Stopped listening on port 43865
+1570803191269	mozrunner::runner	INFO	Running command: "/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jDqpTk2NosmK"
+
+(firefox:125378): Gtk-WARNING **: 14:13:11.342: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570803192274	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1570803192274	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1570803192274	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1570803192275	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+
+(/usr/lib/firefox/firefox:125435): Gtk-WARNING **: 14:13:13.292: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:125456): Gtk-WARNING **: 14:13:13.697: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570803195751	Marionette	INFO	Listening on port 36141
+1570803195892	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:125528): Gtk-WARNING **: 14:13:17.932: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1570803366536	Marionette	INFO	Stopped listening on port 36141
+console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 683))
